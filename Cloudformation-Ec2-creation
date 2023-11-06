@@ -1,0 +1,19 @@
+Resources:
+  
+  MyEC2Instance:
+  
+    Type: AWS::EC2::Instance
+  
+    Properties: 
+
+      AvailabilityZone: 'us-east-2a'
+  
+      ImageId: 'ami-01f48e1e4b60cb973'
+  
+      InstanceType: t2.micro
+     
+      SecurityGroupIds: 
+  
+        - 'sg-02e9bf0934b725a0c'
+  
+      KeyName: 'Linux-key-off'
